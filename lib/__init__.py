@@ -1,9 +1,9 @@
 """
-lib/__init__.py
-Automation toolkit package.
-Exposes core utilities for log generation and API data fetching.
+generate_log.py (root-level shim)
+Allows direct import of generate_log without the lib. prefix.
+The actual implementation lives in lib/generate_log.py.
 """
 
-from .generate_log import generate_log
+from lib.generate_log import generate_log
 
 __all__ = ["generate_log"]
